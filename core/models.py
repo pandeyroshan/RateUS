@@ -63,5 +63,5 @@ class EntryCodes(models.Model):
         return self.code
     
     class Meta:
-        verbose_name= "Entry Codes"
-        verbose_name_plural = "Entry Codes"
+        verbose_name= "Entry Code"
+        verbose_name_plural = "Entry Code"
