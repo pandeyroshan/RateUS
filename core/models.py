@@ -48,10 +48,11 @@ class Rating(models.Model):
     review = models.TextField()
 
     def __str__(self):
-        return self.faculty
+        return str(self.faculty)
     class Meta:
         verbose_name = "Rating Data"
         verbose_name_plural = "Rating Data"
+        unique_together = ('ip', 'faculty','subject',)
 
 class EntryCodes(models.Model):
     code = models.CharField("Entry Code", max_length=20)
